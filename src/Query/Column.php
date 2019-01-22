@@ -177,6 +177,18 @@ class Column
     }
 
     /**
+     * Apply max function to column.
+     *
+     * @return $this
+     */
+    public function max()
+    {
+        $this->functions[] = ['function' => 'max'];
+
+        return $this;
+    }
+
+    /**
      * Apply sumIf function to column.
      *
      * @param array|mixed $expression
