@@ -80,6 +80,18 @@ trait ColumnCompiler
         return "runningDifference({$column})";
     }
 
+    /**
+     * Compiles max function on column.
+     *
+     * @param $column
+     *
+     * @return string
+     */
+    private function max($column)
+    {
+        return "max({$column})";
+    }
+
     private function count()
     {
         return 'count()';
